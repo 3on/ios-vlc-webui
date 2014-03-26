@@ -29,6 +29,24 @@
                 "label": "+"
             }
         },
+        "image": {
+            "prototype": "digit/ui/image.reel",
+            "properties": {
+                "element": {"#": "image"},
+                "crossOrigin": null
+            }
+        },
+        "repetition": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "element": {"#": "repetition"},
+                "content": [
+                    1,
+                    2,
+                    3
+                ]
+            }
+        },
         "text": {
             "prototype": "montage/ui/text.reel",
             "properties": {
@@ -46,6 +64,12 @@
             <span data-montage-id="text"></span>
             <button data-montage-id="button2"></button>
         </div>
+        <ul data-montage-id="repetition">
+            <li>
+                Item
+                <img data-montage-id="image">
+            </li>
+        </ul>
     </div>
 </body>
 </html>
