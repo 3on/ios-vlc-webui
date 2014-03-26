@@ -29,6 +29,14 @@
                 "label": "+"
             }
         },
+        "button3": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button3"},
+                "enabled": true,
+                "label": "Button"
+            }
+        },
         "image": {
             "prototype": "digit/ui/image.reel",
             "properties": {
@@ -53,6 +61,13 @@
                 "element": {"#": "text"},
                 "value": "WiFi Upload"
             }
+        },
+        "text2": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text2"},
+                "value": "Text"
+            }
         }
     }
     </script>
@@ -68,6 +83,9 @@
             <li>
                 Item
                 <img data-montage-id="image">
+                <progress></progress>
+                <p data-montage-id="text2"></p>
+                <button data-montage-id="button3"></button>
             </li>
         </ul>
     </div>
